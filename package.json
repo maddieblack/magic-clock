@@ -1,0 +1,30 @@
+{
+  "name": "magic-clock",
+  "version": "0.0.1",
+  "description": "An API for the Weasley's clock in Harry Potter and the Chamber of Secrets",
+  "main": "app.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "nodemon": "^1.19.2"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "nodemon -w src/* --exec \"npm run build && node dist/app.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heymaddieh/magic-clock.git"
+  },
+  "author": "Maddie Black <madalynh.black@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heymaddieh/magic-clock/issues"
+  },
+  "homepage": "https://github.com/heymaddieh/magic-clock#readme"
+}
